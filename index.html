@@ -22,10 +22,19 @@
 		<div>
 			<h2 style="color: black;">DATOS DEL VEHICULO</h1>
 			<input type="text" placeholder="Matricula">
+			<input type="text" placeholder="Tipo de vehiculo" id="veh">
 		</div>
 		
-		<input type="submit" value="Registrar" class="btn-enviar">
-		<p class="form-link">Ya tienes una cuenta?<a href="#">Ingresa aquí</a></p>
+		<input type="submit" value="Registrar" class="btn-enviar" onClick="mostrar()">
+		
+		<script>
+			function mostrar(params) {
+				var nom=document.getElementById('nombre').value;
+				var veh=document.getElementById('veh').value;
+				alert('Conductor:' + nom+ 'Vehiculo: '+veh);
+			}
+		</script>
+
 	</div>
 </form>
 	
